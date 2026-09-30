@@ -169,9 +169,6 @@ Projeto desenvolvido para a disciplina de **Programação para Dispositivos Móv
 
 ---
 
-## 👩‍💻 Autora
+##  Autora
 
-**Beatriz Albuquerque**
-
-
-Beatriz Albuquerque - biaams-sys
+***Beatriz Albuquerque - biaams-sys***
