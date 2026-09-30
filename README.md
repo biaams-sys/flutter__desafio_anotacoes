@@ -1,4 +1,4 @@
-# 📝 Bloco de Anotações
+#  Bloco de Anotações
 
 Aplicativo mobile desenvolvido em **Flutter** para o **Desafio 03 — Aula 04: Consumo de APIs Externas**, da disciplina de Programação para Dispositivos Móveis.
 
@@ -8,20 +8,20 @@ O aplicativo é um bloco de anotações com autenticação através da API **Dum
 
 ## ✦ Funcionalidades
 
-### 🔐 Autenticação
+###  Autenticação
 - Login utilizando a API DummyJSON
 - Autenticação através de `username` e `password`
 - Validação das credenciais
 - Mensagem de acesso negado quando o login não é realizado
 
-### 📝 Anotações
+###  Anotações
 - Visualização das anotações cadastradas
 - Criação de novas anotações
 - Registro da data e horário
 - Armazenamento local no dispositivo
 - Recuperação das anotações após fechar e abrir o aplicativo
 
-### 📱 Navegação
+###  Navegação
 - Splash Screen com animação de entrada e saída
 - Tela de Login
 - Tela Home
@@ -32,33 +32,33 @@ O aplicativo é um bloco de anotações com autenticação através da API **Dum
 
 ---
 
-## 🎨 Interface
+##  Interface
 
 O aplicativo possui uma interface simples e intuitiva, com uma identidade visual baseada em tons de rosa e creme.
 
 ### Splash Screen
 
-<img src="assets/screenshots/01-splash.png" width="250">
+<img src="assets/01-splash.png" width="250">
 
 ### Login
 
-<img src="assets/screenshots/02-login.png" width="250">
+<img src="assets/02-login.png" width="250">
 
 ### Home
 
-<img src="assets/screenshots/03-home.png" width="250">
+<img src="assets/03-home.png" width="250">
 
 ### Nova anotação
 
-<img src="assets/screenshots/04-anotacao.png" width="250">
+<img src="assets/04-anotacao.png" width="250">
 
 ### Menu lateral
 
-<img src="assets/screenshots/05-menu.png" width="250">
+<img src="assets/05-menu.png" width="250">
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 | Tecnologia | Utilização |
 |---|---|
@@ -72,7 +72,7 @@ O aplicativo possui uma interface simples e intuitiva, com uma identidade visual
 
 ---
 
-## 🌐 API
+##  API
 
 A autenticação é realizada através da API **DummyJSON**.
 
@@ -89,7 +89,7 @@ Em caso de credenciais inválidas, o aplicativo informa que o acesso foi negado.
 
 ---
 
-## 💾 Persistência
+##  Persistência
 
 As anotações são armazenadas localmente utilizando o pacote **SharedPreferences**.
 
@@ -108,7 +108,8 @@ lib/
 ├── anotacao_screen.dart
 ├── auth_service.dart
 └── storage_service.dart
-🚀 Como executar
+```
+## Como executar
 Pré-requisitos
 
 É necessário ter instalado:
@@ -121,7 +122,7 @@ Instalação
 
 Clone o repositório:
 
-git clone URL_DO_REPOSITORIO
+git clone "https://github.com/biaams-sys/flutter__desafio_anotacoes.git"
 
 Entre na pasta do projeto:
 
@@ -134,39 +135,20 @@ flutter pub get
 Execute o aplicativo:
 
 flutter run
-🔑 Usuário para teste
+ Usuário para teste
 
 Para testar a autenticação, pode ser utilizado o usuário disponibilizado pela API DummyJSON:
 
 Usuário: emilys
 Senha: emilyspass
-📦 APK
+ APK
 
 A versão final do aplicativo foi gerada em modo Release:
 
 flutter build apk --release
-⬇️ Download
+ Download
 
 Baixar APK — app-release.apk
-
-📚 Requisitos do desafio
-RF001
-
-Tela Splash com animação de entrada e saída.
-
-✅ Implementado.
-
-RF002
-
-Tela de Login utilizando a API DummyJSON como autenticador, com os campos username e password, envio dos dados para a API e mensagem de acesso negado em caso de falha.
-
-✅ Implementado.
-
-RF003
-
-Tela Home com cabeçalho, menu lateral, lista de anotações e botão para adicionar uma nova anotação.
-
-✅ Implementado.
 
 📌 Desafio
 
@@ -178,7 +160,7 @@ Projeto desenvolvido para a disciplina de Programação para Dispositivos Móvei
 
 👩‍💻 Autora
 
-Beatriz Albuquerque
+**Beatriz Albuquerque**
 
 2026
 
@@ -214,3 +196,4 @@ flutter_desafio_anotacoes/
 │   └── storage_service.dart
 │
 └── android/
+```
