@@ -140,24 +140,38 @@ Para testar a autenticação, pode ser utilizado o usuário disponibilizado pela
 
 Usuário: emilys
 Senha: emilyspass
+Você colou o bloco **dentro de um bloco de código**, por isso o GitHub está tratando tudo como código. 😭
+
+**Não apague o README inteiro.** Só substitua a parte final por este conteúdo **exatamente como está abaixo**, começando em `## 📦 APK`:
+
+````md
 ##  APK
 
 A versão final do aplicativo foi gerada em modo Release:
 
 ```bash
 flutter build apk --release
-Download
+````
 
- Baixar APK — app-release.apk
+### Download
 
- Desafio
+[ Baixar APK — app-release.apk](./app-release.apk)
 
-Aula 04 — Consumo de APIs Externas
+---
 
-Desafio 03 — Aplicativo de bloco de anotações
+##  Desafio
 
-Projeto desenvolvido para a disciplina de Programação para Dispositivos Móveis — SENAI.
+**Aula 04 — Consumo de APIs Externas**
 
- Autora
+**Desafio 03 — Aplicativo de bloco de anotações**
+
+Projeto desenvolvido para a disciplina de **Programação para Dispositivos Móveis — SENAI**.
+
+---
+
+## 👩‍💻 Autora
+
+**Beatriz Albuquerque**
+
 
 Beatriz Albuquerque - biaams-sys
