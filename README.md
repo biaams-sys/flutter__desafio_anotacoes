@@ -140,16 +140,17 @@ Para testar a autenticação, pode ser utilizado o usuário disponibilizado pela
 
 Usuário: emilys
 Senha: emilyspass
- APK
+##  APK
 
 A versão final do aplicativo foi gerada em modo Release:
 
+```bash
 flutter build apk --release
- Download
+Download
 
-Baixar APK — app-release.apk
+ Baixar APK — app-release.apk
 
-📌 Desafio
+ Desafio
 
 Aula 04 — Consumo de APIs Externas
 
@@ -157,42 +158,6 @@ Desafio 03 — Aplicativo de bloco de anotações
 
 Projeto desenvolvido para a disciplina de Programação para Dispositivos Móveis — SENAI.
 
-👩‍💻 Autora
+ Autora
 
-**Beatriz Albuquerque**
-
-2026
-
-
-## E a estrutura do GitHub vai ficar assim
-
-Eu recomendo **não colocar o APK dentro de `build/`**, porque essa pasta é gerada automaticamente pelo Flutter e normalmente nem deve ser enviada ao GitHub.
-
-Faça:
-
-```text
-flutter_desafio_anotacoes/
-│
-├── README.md
-├── app-release.apk          ← COPIE o APK para cá
-├── pubspec.yaml
-│
-├── assets/
-│   └── screenshots/
-│       ├── 01-splash.png
-│       ├── 02-login.png
-│       ├── 03-home.png
-│       ├── 04-anotacao.png
-│       └── 05-menu.png
-│
-├── lib/
-│   ├── main.dart
-│   ├── splash_screen.dart
-│   ├── login_screen.dart
-│   ├── home_screen.dart
-│   ├── anotacao_screen.dart
-│   ├── auth_service.dart
-│   └── storage_service.dart
-│
-└── android/
-```
+Beatriz Albuquerque - biaams-sys
