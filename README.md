@@ -1,147 +1,103 @@
-````md
-#  Bloco de Anotações
+# 📝 Bloco de Anotações
 
-Aplicativo mobile desenvolvido em Flutter para a aula de Programação para Dispositivos Móveis, referente ao **Desafio 03 da Aula 04 — Consumo de APIs Externas**.
+Aplicativo mobile desenvolvido em **Flutter** para o **Desafio 03 — Aula 04: Consumo de APIs Externas**, da disciplina de Programação para Dispositivos Móveis.
 
-O aplicativo permite realizar autenticação utilizando a API DummyJSON e criar e armazenar anotações localmente no dispositivo.
+O aplicativo é um bloco de anotações com autenticação através da API **DummyJSON** e armazenamento local das anotações no dispositivo.
 
 ---
 
-##  Funcionalidades
+## ✦ Funcionalidades
 
+### 🔐 Autenticação
+- Login utilizando a API DummyJSON
+- Autenticação através de `username` e `password`
+- Validação das credenciais
+- Mensagem de acesso negado quando o login não é realizado
+
+### 📝 Anotações
+- Visualização das anotações cadastradas
+- Criação de novas anotações
+- Registro da data e horário
+- Armazenamento local no dispositivo
+- Recuperação das anotações após fechar e abrir o aplicativo
+
+### 📱 Navegação
 - Splash Screen com animação de entrada e saída
 - Tela de Login
-- Autenticação utilizando a API DummyJSON
-- Validação de usuário e senha
-- Mensagem de acesso negado para login inválido
-- Tela Home com lista de anotações
+- Tela Home
 - Menu lateral
-- Acesso à Splash pelo menu
-- Opção de sair do aplicativo
-- Criação de novas anotações
-- Armazenamento local das anotações
-- Recuperação das anotações após fechar e abrir o aplicativo
-- Interface com tema e paleta de cores personalizada
-- Fonte personalizada do Google Fonts
-- Ícone personalizado para o aplicativo
+- Acesso à Splash através do menu
+- Opção para sair do aplicativo
+- Botão `+` para criar uma nova anotação
 
 ---
 
-##  Interface
+## 🎨 Interface
 
-O aplicativo possui uma interface com visual simples e intuitivo, utilizando uma paleta em tons de rosa e creme.
+O aplicativo possui uma interface simples e intuitiva, com uma identidade visual baseada em tons de rosa e creme.
 
-### Splash
+### Splash Screen
 
-![Splash](assets/screenshots/01-splash.png)
+<img src="assets/screenshots/01-splash.png" width="250">
 
 ### Login
 
-![Login](assets/screenshots/02-login.png)
+<img src="assets/screenshots/02-login.png" width="250">
 
 ### Home
 
-![Home](assets/screenshots/03-home.png)
+<img src="assets/screenshots/03-home.png" width="250">
 
 ### Nova anotação
 
-![Nova anotação](assets/screenshots/04-anotacao.png)
+<img src="assets/screenshots/04-anotacao.png" width="250">
 
 ### Menu lateral
 
-![Menu lateral](assets/screenshots/05-menu.png)
+<img src="assets/screenshots/05-menu.png" width="250">
 
 ---
 
-##  Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-- Flutter
-- Dart
-- API REST
-- DummyJSON
-- SharedPreferences
-- Google Fonts
-- Android Studio
-- Visual Studio Code
-
----
-
-##  API utilizada
-
-A autenticação do aplicativo utiliza a API **DummyJSON**.
-
-O aplicativo envia o nome de usuário e a senha informados na tela de Login para a API.
-
-Quando a autenticação é realizada com sucesso, o usuário é direcionado para a tela Home.
-
-Quando a autenticação falha, é exibida uma mensagem de acesso negado.
+| Tecnologia | Utilização |
+|---|---|
+| Flutter | Desenvolvimento do aplicativo |
+| Dart | Linguagem de programação |
+| DummyJSON | Autenticação |
+| SharedPreferences | Persistência local |
+| Google Fonts | Fonte da interface |
+| Android Studio | Emulação e execução |
+| VS Code | Desenvolvimento |
 
 ---
 
-##  Persistência de dados
+## 🌐 API
 
-As anotações são armazenadas localmente utilizando o `SharedPreferences`.
+A autenticação é realizada através da API **DummyJSON**.
 
-Dessa forma, as anotações permanecem disponíveis mesmo depois que o aplicativo é fechado e aberto novamente no dispositivo.
+O aplicativo envia:
 
----
+- `username`
+- `password`
 
-##  Requisitos
+para realizar a autenticação.
 
-Para executar o projeto, é necessário ter instalado:
+Após uma autenticação bem-sucedida, o usuário é direcionado para a tela Home.
 
-- Flutter
-- Dart
-- Android Studio ou outro ambiente compatível com Flutter
-- Emulador Android ou dispositivo Android
+Em caso de credenciais inválidas, o aplicativo informa que o acesso foi negado.
 
 ---
 
-## ▶ Como executar
+## 💾 Persistência
 
-Clone o repositório:
+As anotações são armazenadas localmente utilizando o pacote **SharedPreferences**.
 
-```bash
-git clone URL_DO_REPOSITORIO
-````
-
-Entre na pasta do projeto:
-
-```bash
-cd flutter_desafio_anotacoes
-```
-
-Instale as dependências:
-
-```bash
-flutter pub get
-```
-
-Execute o aplicativo:
-
-```bash
-flutter run
-```
-
-Também é possível executar em um dispositivo Android ou emulador configurado.
+Isso permite que as anotações continuem disponíveis mesmo depois que o aplicativo é fechado e aberto novamente no dispositivo.
 
 ---
 
-##  APK
-
-O APK de release foi gerado utilizando:
-
-```bash
-flutter build apk --release
-```
-
-### Download
-
-[⬇ Baixar APK](LINK_DO_APK)
-
----
-
-##  Estrutura principal
+## 📂 Estrutura do projeto
 
 ```text
 lib/
@@ -152,80 +108,109 @@ lib/
 ├── anotacao_screen.dart
 ├── auth_service.dart
 └── storage_service.dart
-```
+🚀 Como executar
+Pré-requisitos
 
----
+É necessário ter instalado:
 
-##  Desafio
+Flutter
+Dart
+Android Studio ou VS Code
+Emulador Android ou dispositivo Android
+Instalação
 
-**Aula 04 — Consumo de APIs Externas**
+Clone o repositório:
 
-**Desafio 03 — Aplicativo de bloco de anotações**
+git clone URL_DO_REPOSITORIO
 
-Requisitos implementados:
+Entre na pasta do projeto:
 
-* RF001 — Splash com animação de entrada e saída
-* RF002 — Login utilizando a API DummyJSON
-* RF003 — Home com menu lateral, lista de anotações e botão para adicionar novas anotações
+cd flutter_desafio_anotacoes
 
----
+Instale as dependências:
 
-##  Desenvolvido por
+flutter pub get
 
-**Beatriz Albuquerque**
+Execute o aplicativo:
+
+flutter run
+🔑 Usuário para teste
+
+Para testar a autenticação, pode ser utilizado o usuário disponibilizado pela API DummyJSON:
+
+Usuário: emilys
+Senha: emilyspass
+📦 APK
+
+A versão final do aplicativo foi gerada em modo Release:
+
+flutter build apk --release
+⬇️ Download
+
+Baixar APK — app-release.apk
+
+📚 Requisitos do desafio
+RF001
+
+Tela Splash com animação de entrada e saída.
+
+✅ Implementado.
+
+RF002
+
+Tela de Login utilizando a API DummyJSON como autenticador, com os campos username e password, envio dos dados para a API e mensagem de acesso negado em caso de falha.
+
+✅ Implementado.
+
+RF003
+
+Tela Home com cabeçalho, menu lateral, lista de anotações e botão para adicionar uma nova anotação.
+
+✅ Implementado.
+
+📌 Desafio
+
+Aula 04 — Consumo de APIs Externas
+
+Desafio 03 — Aplicativo de bloco de anotações
 
 Projeto desenvolvido para a disciplina de Programação para Dispositivos Móveis — SENAI.
 
-````
+👩‍💻 Autora
 
-###  Só tem 3 coisas que você precisa substituir
+Beatriz Albuquerque
 
-No README acima, ainda existem placeholders:
+2026
 
-**1. As imagens**
 
-Crie na raiz:
+## E a estrutura do GitHub vai ficar assim
 
-```text
-assets/
-└── screenshots/
-    ├── 01-splash.png
-    ├── 02-login.png
-    ├── 03-home.png
-    ├── 04-anotacao.png
-    └── 05-menu.png
-````
+Eu recomendo **não colocar o APK dentro de `build/`**, porque essa pasta é gerada automaticamente pelo Flutter e normalmente nem deve ser enviada ao GitHub.
 
-Depois coloque seus prints nessas posições.
-
-**2. URL do GitHub**
-
-Troque:
-
-```md
-git clone URL_DO_REPOSITORIO
-```
-
-pela URL real do seu repositório.
-
-**3. Link do APK**
-
-Troque:
-
-```md
-[⬇ Baixar APK](LINK_DO_APK)
-```
-
-pelo link que você vai colocar no GitHub para o `app-release.apk`.
-
-### Uma observação importante
-
-Eu **não colocaria o `app-debug.apk`** no README. O arquivo correto para entrega é o:
+Faça:
 
 ```text
-app-release.apk
-```
-
-que você já gerou com **49,2 MB**.
-
-Também não precisa colocar os arquivos `.sha1` na entrega principal.
+flutter_desafio_anotacoes/
+│
+├── README.md
+├── app-release.apk          ← COPIE o APK para cá
+├── pubspec.yaml
+│
+├── assets/
+│   └── screenshots/
+│       ├── 01-splash.png
+│       ├── 02-login.png
+│       ├── 03-home.png
+│       ├── 04-anotacao.png
+│       └── 05-menu.png
+│
+├── lib/
+│   ├── main.dart
+│   ├── splash_screen.dart
+│   ├── login_screen.dart
+│   ├── home_screen.dart
+│   ├── anotacao_screen.dart
+│   ├── auth_service.dart
+│   └── storage_service.dart
+│
+└── android/
