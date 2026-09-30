@@ -139,10 +139,8 @@ flutter run
 Para testar a autenticação, pode ser utilizado o usuário disponibilizado pela API DummyJSON:
 
 Usuário: emilys
-Senha: emilyspass
-Você colou o bloco **dentro de um bloco de código**, por isso o GitHub está tratando tudo como código. 😭
 
-**Não apague o README inteiro.** Só substitua a parte final por este conteúdo **exatamente como está abaixo**, começando em `## 📦 APK`:
+Senha: emilyspass
 
 ````md
 ##  APK
