@@ -38,7 +38,7 @@ O aplicativo possui uma interface simples e intuitiva, com uma identidade visual
 
 ### Splash Screen
 
-<img src="./flutter__desafio_anotacoes/assets/screenshots/01-splash.png" width="250">
+<img src="./flutter_desafio_anotacoes/assets/screenshots/01-splash.png" width="250">
 
 ### Login
 
