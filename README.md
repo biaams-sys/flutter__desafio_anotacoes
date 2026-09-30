@@ -38,24 +38,23 @@ O aplicativo possui uma interface simples e intuitiva, com uma identidade visual
 
 ### Splash Screen
 
-<img src="assets/01-splash.png" width="250">
+<img src="./flutter__desafio_anotacoes/flutter__desafio_anotacoes/assets/screenshots/01-splash.png" width="250">
 
 ### Login
 
-<img src="assets/02-login.png" width="250">
+<img src="./flutter__desafio_anotacoes/flutter__desafio_anotacoes/assets/screenshots/02-login.png" width="250">
 
 ### Home
 
-<img src="assets/03-home.png" width="250">
+<img src="./flutter__desafio_anotacoes/flutter__desafio_anotacoes/assets/screenshots/03-home.png" width="250">
 
 ### Nova anotação
 
-<img src="assets/04-anotacao.png" width="250">
+<img src="./flutter__desafio_anotacoes/flutter__desafio_anotacoes/assets/screenshots/04-anotacao.png" width="250">
 
 ### Menu lateral
 
-<img src="assets/05-menu.png" width="250">
-
+<img src="./flutter__desafio_anotacoes/flutter__desafio_anotacoes/assets/screenshots/05-menu.png" width="250">
 ---
 
 ##  Tecnologias
